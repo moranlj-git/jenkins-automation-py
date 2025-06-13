@@ -5,12 +5,6 @@ pipeline {
     }
 	
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'git@github.com:moranlj-git/jenkins-pipeline-python.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'pip install -r requirements.txt' // Assumes pip is available in the PATH
