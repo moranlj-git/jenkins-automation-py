@@ -13,7 +13,7 @@ pipeline {
 
         stage('Run Scraper') {
             steps {
-                sh 'python scraper.py'
+                sh 'python3 scraper.py'
             }
         }
 
